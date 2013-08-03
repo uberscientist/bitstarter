@@ -27,6 +27,14 @@ p {
   padding: 0 0 60px;
 }
 
+#address-container {
+  display: none;
+}
+
+#qr-code {
+  display: none;
+}
+
 #wrap > .container {
   padding: 60px 15px 0;
 }

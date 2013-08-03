@@ -122,15 +122,28 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Thank you!</h4>
+            <h4 class="modal-title">Donate</h4>
           </div>
           <div class="modal-body">
-            <div id="qrcode"></div>
-            <div id="donate-address"></div>
-            Your name: <input id="donater-name" type="text" placeholder="Anonymous" maxlength="40"></input>
+
+            <div id="address-container" class="container">
+              <div class="row">
+                <div class="col-3">
+                  <img id="qr-code" class="img-responsive" alt="QR Address" />
+                </div>
+              </div>
+              <div class="row">
+                <b>Address: </b> <span id="address"></span>
+              </div>
+            </div>
+
+            <div class="hide-after-donate">
+              Your name: <input id="donater-name" type="text" placeholder="Anonymous" maxlength="40"></input>
+            </div>
+
           <div class="modal-footer">
-            <button class="btn btn-primary">Bitcoin</button>
-            <button class="btn btn-info">Litecoin</button>
+            <button id="bitcoin" class="btn btn-primary coin-select-btn hide-after-donate">Bitcoin</button>
+            <button id="litecoin" class="btn btn-info coin-select-btn hide-after-donate">Litecoin</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->

@@ -29,9 +29,13 @@ p {
 
 #address-container {
   display: none;
+  margin: 0px auto;
 }
 
 #qr-code {
+  width: 111px;
+  height: 111px;
+  margin: 0px auto;
   display: none;
 }
 
@@ -60,6 +64,10 @@ code {
 .video, .thermometer, .order, .social, .statistics {
   text-align: center;
   padding: 5%;
+}
+.social {
+  width: 310px;
+  margin: 0px auto;
 }
 .statistics h3, .statistics p {
   color: white;

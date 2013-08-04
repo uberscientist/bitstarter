@@ -64,16 +64,17 @@
         </div>
         <p class="lead">How does measuring electrical activity in skeletal muscles (<a href="http://en.wikipedia.org/wiki/Electromyography">EMG</a>) correlate with other aspects of Parkinson's disease?</p>
         <div class="row">
-          <div class="col-lg-6">
-            <p>
-              My dad was diagnosed with Parkinsons disease in 2008. I have been living with him since 2011 and have been able to observe first hand the effects of this degenerative neurological disease. Inspired by the Parkinsons Voice Initiative and my own participating in the recent course on machine learning, I believe there is potential to gain valuable insights into certain aspects of the disease using data from a simple EMG device and applying machine learning algorithms to the collected data.
-            </p>
-            <p>
-              I am most hopeful of finding a better way of objectively measuring the well known "on" and "off" periods that people with Parkinsons experience in their daily lives, and how those on and off episodes are influenced by medication, foods, exercise and other environmental factors. Creating a dosage schedule is difficult due to the varience in the speed of metabolization of L-Dopa and dopamine. I would like to find that it would be plausible to create a wrist band that would measure EMG and then alert the patient to medicate with L-Dopa at the appropriate times.
-            </p>
-          </div>
-  
-        <div class="col-lg-6">
+          <div class="col-lg-8 pull-left">
+            <div class="col-lg-6">
+              <p>
+                My dad was diagnosed with Parkinsons disease in 2008. I have been living with him since 2011 and have been able to observe first hand the effects of this degenerative neurological disease. Inspired by the Parkinsons Voice Initiative and my own participating in the recent course on machine learning, I believe there is potential to gain valuable insights into certain aspects of the disease using data from a simple EMG device and applying machine learning algorithms to the collected data.
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <img class="img-responsive" src="/img/emg-render.jpg" alt="3D render">
+            </div>
+        <div class="col-lg-4 pull-right">
 
           <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
           <div class="col-lg-12 actions">
@@ -112,6 +113,15 @@
 
           </div>
         </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-8 row pull-left">
+          <p>
+            I am most hopeful of finding a better way of objectively measuring the well known "on" and "off" periods that people with Parkinsons experience in their daily lives, and how those on and off episodes are influenced by medication, foods, exercise and other environmental factors. Creating a dosage schedule is difficult due to the varience in the speed of metabolization of L-Dopa and dopamine. I would like to find that it would be plausible to create a wrist band that would measure EMG and then alert the patient to medicate with L-Dopa at the appropriate times.
+          </p>
+        </div>
         </div>
       </div>
     </div>
@@ -126,11 +136,11 @@
           </div>
           <div class="modal-body">
 
-            <div id="address-container" class="container">
+            <div id="address-container" class="text-center">
               <div class="row">
-                <div class="col-3">
-                  <img id="qr-code" class="img-responsive" alt="QR Address" />
-                </div>
+                <a id="address-link" href="">
+                  <img id="qr-code" alt="QR Address" />
+                </a>
               </div>
               <div class="row">
                 <b>Address: </b> <span id="address"></span>

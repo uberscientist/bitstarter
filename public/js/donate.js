@@ -11,6 +11,7 @@ $.ready = function() {
         $('#address-container').fadeIn();
         $('.hide-after-donate').fadeOut();
         $('.modal-title').html('Thank you ' + data.name + '!');
+        $('#address-link').attr('href', coin_type + '://' + data.address);
       }
 
     });

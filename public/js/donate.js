@@ -5,7 +5,14 @@ $.ready = function() {
     var email = $('#donater-email').val() || '';
     var amount = $('#donate-amount').val() || '0.1';
 
-    $.get('/donate-api/address/' + coin_type + '/' + name, function(data) {
+    var donation_data = {
+      name: name, 
+      email: email,
+      amount: amount,
+      type: coin_type
+    };
+
+    $.post('/donate-api/address/', donation_data, function(data) {
 
       if(!data.error) {
         $('#address').html(data.address);

@@ -60,7 +60,7 @@
       <!-- Begin page content -->
       <div class="container">
         <div class="page-header">
-          <h1>EMG and Parkinsons:</h1>
+          <h1>EMG and Parkinsons</h1>
         </div>
         <p class="lead">How does measuring electrical activity in skeletal muscles (<a href="http://en.wikipedia.org/wiki/Electromyography">EMG</a>) correlate with other aspects of Parkinson's disease?</p>
 
@@ -84,7 +84,7 @@
           <div class="row">
             <div class="col-lg-12 row">
               <p>
-                I am most hopeful of finding a better way of objectively measuring the well known "on" and "off" periods that people with Parkinsons experience in their daily lives, and how those on and off episodes are influenced by medication, foods, exercise and other environmental factors. Creating a dosage schedule is difficult due to the varience in the speed of metabolization of L-Dopa and dopamine. I would like to find that it would be plausible to create a wrist band that would measure EMG and then alert the patient to medicate with L-Dopa at the appropriate times, or dispense medication itself.
+                I am most hopeful of finding a better way of objectively measuring the well known "on" and "off" periods that people with Parkinsons experience in their daily lives, and how those on and off episodes are influenced by medication, foods, exercise and other environmental factors. Creating a dosage schedule is difficult due to the variance in the speed of metabolization of L-Dopa and dopamine. I would like to find that it would be plausible to create a wrist band that would measure EMG and then alert the patient to medicate with L-Dopa at the appropriate times, or dispense medication itself.
               </p>
             </div><!-- .col-lg-12 -->
           </div><!-- /.row -->
@@ -95,14 +95,13 @@
           <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
           <div class="col-12 col-lg-12 actions">
               <div class="statistics">
-                  <h3>0</h3> <p>backers</p>
-                  <h3>$0</h3> <p>of $1,000</p>
-                  <h3>All</h3> <p>days left</p>
+                <h3>1</h3> <p><a href="#">backers</a></p>
+                  <h3>&#3647;0.5</h3>
               </div>
 
             <!-- Bootstrap progress bar -->
             <div class="progress">
-              <div class="progress-bar progress-bar-success" style="width: 0%"></div>
+              <div class="progress-bar progress-bar-success" style="width: 10%"></div>
             </div>
 
           <div class="order">
@@ -160,8 +159,26 @@
           </div>
 
           <div class="hide-after-donate">
-            Your name: <input id="donater-name" type="text" placeholder="Anonymous" maxlength="40"></input>
-            Your e-mail: <input id="donater-email" type="text" placeholder="user@domain.com" maxlength="40"></input>
+            <form>
+              <fieldset>
+
+                <div class="form-group">
+                  <label for="donate-amount">Amount (BTC or LTC):</label>
+                  <input id="donate-amount" class="form-control" type="text" placeholder="0.1" maxlength="40"></input>
+                </div>
+
+                <div class="form-group">
+                  <label for="donator-name">Name:</label>
+                  <input id="donater-name" class="form-control" type="text" placeholder="Anonymous" maxlength="40"></input>
+                </div>
+
+                <div class="form-group">
+                  <label for="donator-email">E-mail:</label>
+                  <input id="donater-email" class="form-control" type="text" placeholder="user@domain.com" maxlength="40"></input>
+                </div>
+                <span class="help-block">All fields optional, fully anonymous donations welcome!</span>
+              </fieldset>
+            </form>
           </div>
 
           <div class="modal-footer">

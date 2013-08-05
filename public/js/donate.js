@@ -2,6 +2,8 @@ $.ready = function() {
 
   var displayAddress = function(coin_type) {
     var name = $('#donater-name').val() || 'Anonymous';
+    var email = $('#donater-email').val() || '';
+    var amount = $('#donate-amount').val() || '0.1';
 
     $.get('/donate-api/address/' + coin_type + '/' + name, function(data) {
 
@@ -11,7 +13,7 @@ $.ready = function() {
         $('#address-container').fadeIn();
         $('.hide-after-donate').fadeOut();
         $('.modal-title').html('Thank you ' + data.name + '!');
-        $('#address-link').attr('href', coin_type + '://' + data.address);
+        $('#address-link').attr('href', coin_type + '://' + data.address + "?amount=" + amount);
       }
 
     });

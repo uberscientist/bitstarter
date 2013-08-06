@@ -30,6 +30,10 @@ $.ready = function() {
 
   }
 
+  var getTotals = function() {
+
+  }
+
   // Donation request
   $('.coin-select-btn').click(function () {
     var coin_type = $(this).attr('id');

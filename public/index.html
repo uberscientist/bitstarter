@@ -95,8 +95,13 @@
           <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
           <div class="col-12 col-lg-12 actions">
               <div class="statistics">
-                <h3>1</h3> <p><a href="#">backers</a></p>
-                  <h3>&#3647;0.5</h3>
+
+  <!-- Button trigger modal -->
+
+                <h3 id="backers-count">1</h3>
+                <p><a data-toggle="modal" href="#donation-rank-modal" id="backers-link" href="#">backers</a></p>
+                <h3>&#3647;<span id="total-btc">0.5</span></h3>
+                <h3>&#0321;<span id="total-ltc">0.0</span></h3>
               </div>
 
             <!-- Bootstrap progress bar -->
@@ -137,7 +142,7 @@
     </div><!-- container -->
   </div><!-- wrap -->
 
-  <!-- Modal -->
+  <!-- Donation Modal -->
   <div class="modal fade" id="donate-modal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -185,6 +190,30 @@
             <button id="bitcoin" class="btn btn-primary coin-select-btn hide-after-donate">Bitcoin</button>
             <button id="litecoin" class="btn btn-info coin-select-btn hide-after-donate">Litecoin</button>
           </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <!-- Donation Display Modal -->
+  <div class="modal fade" id="donation-rank-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+
+          <div id="#btc-donators" class="col-lg-6">
+            <h3>Bitcoin donations:</h3>
+          </div>
+
+          <div id="#ltc-donators"class="col-lg-6">
+            <h3>Litecoin donations:</h3>
+          </div>
+
+          <div class="clearfix"></div>
+
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

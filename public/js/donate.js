@@ -19,8 +19,16 @@ $.ready = function() {
     });
   }
 
+  var displayDonations = function() {
+
+  }
+
+  // Donation request
   $('.coin-select-btn').click(function () {
     var coin_type = $(this).attr('id');
     displayAddress(coin_type);
   });
+
+  // Display the backer ranks when clicked
+  $('#backers-link').click(displayDonations);
 };

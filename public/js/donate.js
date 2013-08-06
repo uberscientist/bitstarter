@@ -31,7 +31,11 @@ $.ready = function() {
   }
 
   var getTotals = function() {
-
+    $.get('/donate-api/totals', function(totals) {
+      console.log(totals);
+      $('#total-btc').html(totals[0]);
+      $('#total-ltc').html(totals[1]);
+    }
   }
 
   // Donation request

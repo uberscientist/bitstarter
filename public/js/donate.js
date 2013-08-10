@@ -54,7 +54,7 @@ $.ready = function() {
       for(var i = 0; i < ltc.length; i+=2) {
         var name = escapeHTML(ltc[i]);
         var amount = ltc[i+1];
-        ltc_list += "<li>" + name + " : " + "&#3647;" + amount + "</li>";
+        ltc_list += "<li>" + name + " : " + "&#0321;" + amount + "</li>";
       }
       ltc_list += "</ul>";
 
